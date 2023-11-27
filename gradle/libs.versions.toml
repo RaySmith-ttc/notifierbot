@@ -1,0 +1,225 @@
+[versions]
+kotlin = "1.9.0"
+
+compose = "1.4.0"
+
+kotlinx-coroutines = "1.7.3"
+kotlinx-serialization = "1.6.0"
+kotlinx-datetime = "0.4.0"
+
+ktor = "2.3.6"
+
+react = "18.2.0-pre.619"
+
+exposed = "0.44.1"
+
+google-api-client = "2.2.0"
+google-auth-library = "1.16.1"
+google-oauth-client-jetty = "1.34.1"
+google-api-services-sheets = "v4-rev612-1.25.0"
+google-api-services-drive = "v3-rev197-1.25.0"
+
+exposedOption = "1.5"
+utils = "2.3.0"
+tg-bot = "1.0.0-beta.1"
+google = "0.1"
+
+logback = "1.4.4"
+slf4j = "2.0.9"
+kodein = "7.20.2"
+sentry = "6.18.1"
+bcrypt = "0.4"
+swaggerCodegen = "1.0.41"
+tika = "2.8.0"
+commonsImaging = "1.0-alpha3"
+jsoup = "1.16.1"
+xmlutil = "0.86.2"
+
+kotest = "5.8.0"
+mockk = "1.13.7"
+
+[libraries]
+
+# compose
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version = "1.6.1" }
+androidx-activityCompose = { module = "androidx.activity:activity-compose", version = "1.7.0" }
+compose-uitooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-uitooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+napier = { module = "io.github.aakira:napier", version = "2.6.1" }
+libres = { module = "io.github.skeptick.libres:libres-compose", version = "1.1.7" }
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version = "1.0.0-rc04" }
+composeImageLoader = { module = "io.github.qdsfdhvh:image-loader", version.ref = "compose" }
+composeIcons-fontAwesome = { module = "br.com.devsrsouza.compose.icons:font-awesome", version = "1.1.0" }
+multiplatformSettings = { module = "com.russhwolf:multiplatform-settings", version = "1.0.0" }
+
+# kotlin
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-slf4j = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-slf4j", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
+kotlinx-html-js = { module = "org.jetbrains.kotlinx:kotlinx-html-js", version = "0.8.1" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-protobuf = { module = "org.jetbrains.kotlinx:kotlinx-serialization-protobuf", version.ref = "kotlinx-serialization" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
+kotlinx-atomicfu = { module = "org.jetbrains.kotlinx:atomicfu", version = "0.22.0" }
+
+# ktor
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-serialization-kotlinx-xml = { module = "io.ktor:ktor-serialization-kotlinx-xml", version.ref = "ktor" }
+ktor-serialization-kotlinx-protobuf = { module = "io.ktor:ktor-serialization-kotlinx-protobuf", version.ref = "ktor" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-json = { module = "io.ktor:ktor-client-json", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+ktor-client-contentNegotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-websockets = { module = "io.ktor:ktor-client-websockets", version.ref = "ktor" }
+ktor-client-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
+ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor" }
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+
+ktor-server-core-jvm = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
+ktor-server-statusPages = { module = "io.ktor:ktor-server-status-pages", version.ref = "ktor" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+ktor-server-contentNegotiation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor" }
+ktor-server-websockets = { module = "io.ktor:ktor-server-websockets", version.ref = "ktor" }
+ktor-server-cors-jvm = { module = "io.ktor:ktor-server-cors-jvm", version.ref = "ktor" }
+ktor-server-callLogging-jvm = { module = "io.ktor:ktor-server-call-logging-jvm", version.ref = "ktor" }
+ktor-server-auth = { module = "io.ktor:ktor-server-auth", version.ref = "ktor" }
+ktor-server-auth-jwt = { module = "io.ktor:ktor-server-auth-jwt", version.ref = "ktor" }
+ktor-server-swagger = { module = "io.ktor:ktor-server-swagger", version.ref = "ktor" }
+ktor-server-openapi = { module = "io.ktor:ktor-server-openapi", version.ref = "ktor" }
+ktor-server-compression = { module = "io.ktor:ktor-server-compression", version.ref = "ktor" }
+ktor-server-html-builder = { module = "io.ktor:ktor-server-html-builder", version.ref = "ktor" }
+
+ktor-network-tlsCertificates = { module = "io.ktor:ktor-network-tls-certificates", version.ref = "ktor" }
+
+# Kotlin/JS wrappers
+kotlin-react = { module = "org.jetbrains.kotlin-wrappers:kotlin-react", version.ref = "react" }
+kotlin-react-dom = { module = "org.jetbrains.kotlin-wrappers:kotlin-react-dom", version.ref = "react" }
+kotlin-react-legacy = { module = "org.jetbrains.kotlin-wrappers:kotlin-react-legacy", version = "react" }
+kotlin-emotion = { module = "org.jetbrains.kotlin-wrappers:kotlin-emotion", version = "11.11.1-pre.619" }
+kotlin-css = { module = "org.jetbrains.kotlin-wrappers:kotlin-css", version = "1.0.0-pre.619" }
+kotlin-styled = { module = "org.jetbrains.kotlin-wrappers:kotlin-styled", version.ref = "react" }
+kotlin-styled-next = { module = "org.jetbrains.kotlin-wrappers:kotlin-styled-next", version = "1.2.3-pre.619" }
+kotlin-mui = { module = "org.jetbrains.kotlin-wrappers:kotlin-mui", version = "5.14.5-pre.619" }
+kotlin-mui-icons = { module = "org.jetbrains.kotlin-wrappers:kotlin-mui-icons", version = "5.14.3-pre.619" }
+kotlin-react-router = { module = "org.jetbrains.kotlin-wrappers:kotlin-react-router", version = "6.15.0-pre.619" }
+kotlin-react-router-dom = { module = "org.jetbrains.kotlin-wrappers:kotlin-react-router-dom", version = "6.15.0-pre.619" }
+kotlin-react-redux = { module = "org.jetbrains.kotlin-wrappers:kotlin-react-redux", version = "7.2.6-pre.619" }
+kotlin-node = { module = "org.jetbrains.kotlin-wrappers:kotlin-node", version = "18.16.12-pre.622" }
+kotlin-extensions = { module = "org.jetbrains.kotlin-wrappers:kotlin-extensions", version = "1.0.1-pre.619" }
+
+
+# database
+exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+exposed-dao = { module = "org.jetbrains.exposed:exposed-dao", version.ref = "exposed" }
+exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
+exposed-kotlin-datetime = { module = "org.jetbrains.exposed:exposed-kotlin-datetime", version.ref = "exposed" }
+exposed-java-time = { module = "org.jetbrains.exposed:exposed-java-time", version.ref = "exposed" }
+exposed-money = { module = "org.jetbrains.exposed:exposed-money", version.ref = "exposed" }
+mysql-connector = { module = "mysql:mysql-connector-java", version = "8.0.32" }
+hikari = { module = "com.zaxxer:HikariCP", version = "5.0.1" }
+h2 = { module = "com.h2database:h2", version = "2.2.220" }
+
+# google
+# library("apis-drive", "com.google.apis", "google-api-services-drive").version("v3-rev20220214-1.32.1")
+# library("apis-calendar", "com.google.apis", "google-api-services-calendar").version("v3-rev20220203-1.32.1")
+
+google-api-client = { module = "com.google.api-client:google-api-client", version.ref = "google-api-client" }
+google-authClient = { module = "com.google.oauth-client:google-oauth-client-jetty", version.ref = "google-oauth-client-jetty" }
+google-authLibrary-oauth2 = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "google-auth-library" }
+google-authLibrary-credentials = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "google-auth-library" }
+google-apis-sheets = { module = "com.google.apis:google-api-services-sheets", version.ref = "google-api-services-sheets" }
+google-apis-drive = { module = "com.google.apis:google-api-services-drive", version.ref = "google-api-services-drive"}
+google-protobuf-java = { module = "com.google.protobuf:protobuf-java", version = "4.0.0-rc-2" }
+
+# firebase
+firebase-admin = { module = "com.google.firebase:firebase-admin", version = "9.2.0" }
+
+# raysmith
+raysmith-exposedOption = { module = "ru.raysmith:exposed-option", version.ref = "exposedOption" }
+raysmith-utils = { module = "ru.raysmith:utils", version.ref = "utils" }
+raysmith-tgBot = { module = "ru.raysmith:tg-bot", version.ref = "tg-bot" }
+raysmith-google = { module = "ru.raysmith:google", version.ref = "google" }
+
+# utils
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+log4j = { module = "org.apache.logging.log4j:log4j", version = "2.19.0" }
+log4j-slf4j18-impl = { module = "org.apache.logging.log4j:log4j-slf4j18-impl", version = "2.18.0" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+slf4j-reload4j = { module = "org.slf4j:slf4j-reload4j", version.ref = "slf4j" }
+slf4j-log4j13 = { module = "org.slf4j:slf4j-log4j13", version = "1.0.1" }
+kodein = { module = "org.kodein.di:kodein-di", version.ref = "kodein" }
+sentry = { module = "io.sentry:sentry", version.ref = "sentry" }
+sentry-logback = { module = "io.sentry:sentry-logback", version.ref = "sentry" }
+bcrypt = { module = "org.mindrot:jbcrypt", version.ref = "bcrypt" }
+swagger-codegen = { module = "io.swagger.codegen.v3:swagger-codegen-generators", version.ref = "swaggerCodegen" }
+ktor-swaggerUi = { module = "io.github.smiley4:ktor-swagger-ui", version = "1.6.1" }
+javax-money = { module = "javax.money:money-api", version = "1.1" }
+javamoney-moneta = { module = "org.javamoney:moneta", version = "1.4.2" }
+tika = { module = "org.apache.tika:tika-core", version.ref = "tika" }
+commons-imaging = { module = "org.apache.commons:commons-imaging", version.ref = "commonsImaging" }
+jsoup = { module = "org.jsoup:jsoup", version.ref = "jsoup" }
+zxing-core = { module = "com.google.zxing:core", version = "3.5.2"}
+zxing-javase = { module = "com.google.zxing:javase", version = "3.5.2"}
+barbecue = { module = "net.sourceforge.barbecue:barbecue", version = "1.5-beta1" }
+g0dkar-qrcode-kotlin-jvm = { module = "io.github.g0dkar:qrcode-kotlin-jvm", version = "3.3.0" }
+jfree-svg = { module = "org.jfree:org.jfree.svg", version = "5.0.5" }
+pdfbox = { module = "org.apache.pdfbox:pdfbox", version = "2.0.26" }
+easytable = { module = "com.github.vandeseer:easytable", version = "0.8.5" }
+pdfBuilder = { module = "com.github.timrs2998:pdf-builder", version = "1.9.0" }
+xmlutil = { module = "io.github.pdvrieze.xmlutil:core", version.ref = "xmlutil" }
+xmlutil-jvm = { module = "io.github.pdvrieze.xmlutil:core-jvm", version.ref = "xmlutil" }
+xmlutil-android = { module = "io.github.pdvrieze.xmlutil:core-android", version.ref = "xmlutil" }
+xmlutil-js = { module = "io.github.pdvrieze.xmlutil:core-js", version.ref = "xmlutil" }
+xmlutil-serialization = { module = "io.github.pdvrieze.xmlutil:serialization", version.ref = "xmlutil" }
+xmlutil-serialization-jvm = { module = "io.github.pdvrieze.xmlutil:serialization-jvm", version.ref = "xmlutil" }
+xmlutil-serialization-android = { module = "io.github.pdvrieze.xmlutil:serialization-android", version.ref = "xmlutil" }
+xmlutil-serialization-js = { module = "io.github.pdvrieze.xmlutil:serialization-js", version.ref = "xmlutil" }
+markdown = { module = "org.jetbrains:markdown", version = "0.5.0" }
+diadocsdk = { module = "ru.kontur.diadoc:diadocsdk", version = "3.15.2" }
+timeshape = { module = "net.iakovlev:timeshape", version = "2023b.20" }
+
+
+# tests
+kotest = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }
+kotest-assertions = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+kotest-extensions-jvm = { module = "io.kotest:kotest-extensions-jvm", version.ref = "kotest" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+konsist = { module = "com.lemonappdev:konsist", version = "0.12.1" }
+
+[plugins]
+shadow = { id = "com.github.johnrengelman.shadow", version = "8.1.1" }
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+libres = { id = "io.github.skeptick.libres", version = "1.1.7" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
+setupapp = { id = "ru.raysmith.setupapp", version = "1.4" }
+kotest = { id = "io.kotest", version = "0.4.10" }
+
+[bundles]
+ktor-server = [
+    "ktor-client-core", "ktor-server-statusPages", "ktor-server-netty", "ktor-server-contentNegotiation",
+    "ktor-server-websockets", "ktor-server-cors-jvm", "ktor-server-callLogging-jvm", "ktor-serialization-kotlinx-json",
+    "ktor-server-auth", "ktor-server-swagger", "ktor-server-openapi", "ktor-server-compression"
+]
+ktor-client-js = [
+    "ktor-client-core", "ktor-client-js", "ktor-client-logging", "ktor-client-contentNegotiation",
+    "ktor-client-websockets", "ktor-serialization-kotlinx-json", "ktor-client-auth"
+]
+ktor-client-jvm = [
+    "ktor-client-core", "ktor-client-cio", "ktor-client-okhttp", "ktor-client-logging", "ktor-client-contentNegotiation",
+    "ktor-client-websockets", "ktor-serialization-kotlinx-json", "ktor-client-auth"
+]
+database = ["exposed-core", "exposed-dao", "exposed-jdbc", "mysql-connector", "hikari"]
+database-money = ["exposed-money", "javax-money"]
+
+google = [
+    "google-authLibrary-oauth2", "google-authLibrary-credentials", "google-apis-sheets", "google-apis-drive"
+]

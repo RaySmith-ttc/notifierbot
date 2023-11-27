@@ -1,0 +1,1 @@
+worker: java -jar build/libs/notifierbot-1.0.1-dev.jar
